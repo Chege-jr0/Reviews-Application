@@ -1,13 +1,18 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { globalStyles } from '../styles/global';
 
-export default function Home() {
-   return(
+export default function Home () {
+  return (
     <View style={globalStyles.container}>
-      <Text style={globalStyles.titleText}>Home Screen</Text>
+      <Text style={globalStyles.text}>HomeScreen</Text>
+      
     </View>
-   )
-}
- 
+  );
+};
+
+
+
+
+
 
