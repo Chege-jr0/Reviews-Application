@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import Home from './screens/home';
-import Navigator from './routes/homeStack';
+import Navigator from './routes/drawer';
 
 const loadFonts = () => {
   return useFonts({
