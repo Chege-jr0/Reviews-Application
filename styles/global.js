@@ -4,11 +4,10 @@ export const globalStyles = StyleSheet.create({
 
         container: {
           flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
+          paddingLeft:20
         },
         text: {
-          fontFamily: 'nunito-regular',
+          fontFamily: 'nunito-bold',
           fontSize: 18,
         },
         bold: {
