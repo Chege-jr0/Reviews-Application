@@ -1,12 +1,14 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import About from '.../screens/about';
+import About from '../screens/about'
 
 const screens = {
     About: {
         screen: About,
-        navigationOptions:{
-            title: 'About GameZone',
-          
+        navigationOptions: ({ navigation }) => {
+            return {
+                headerTitle: () => <Header navigation={navigation}
+                title='AboutPage'/>
+            }
         }
     },
     
@@ -15,7 +17,6 @@ const screens = {
 const AboutStack = createStackNavigator(screens, {
     defaultNavigationOptions: {
         headerStyle: { backgroundColor: 'gray',
-         haederTintColor: '#444',
          height: 60
         }
     }
